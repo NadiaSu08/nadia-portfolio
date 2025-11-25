@@ -15,7 +15,8 @@ const Education = () => {
                             </div>
                             <div className="text-right mt-2 md:mt-0">
                                 <span className="block text-slate-400 font-mono text-sm">{edu.period}</span>
-                                {edu.gpa && <span className="block text-slate-500 text-sm mt-1">GPA: {edu.gpa}</span>}
+                                {edu.cgpa && <span className="block text-primary text-sm mt-1 font-bold">CGPA: {edu.cgpa}</span>}
+                                {edu.gpa && <span className="block text-primary text-sm mt-1 font-bold">GPA: {edu.gpa}</span>}
                             </div>
                         </div>
 

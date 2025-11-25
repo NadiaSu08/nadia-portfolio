@@ -5,19 +5,19 @@ import Section from './Section';
 const Achievements = () => {
     return (
         <Section id="achievements" title="Achievements">
-            <div className="bg-slate-800/30 rounded-2xl p-8">
-                <ul className="space-y-4">
-                    {resumeData.achievements.map((achievement, idx) => (
-                        <li key={idx} className="flex items-start">
-                            <span className="text-primary mr-3 mt-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                                </svg>
-                            </span>
-                            <span className="text-slate-300">{achievement}</span>
-                        </li>
-                    ))}
-                </ul>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {resumeData.achievements.map((achievement, idx) => (
+                    <div key={idx} className="bg-slate-800/30 border border-slate-700/50 rounded-xl p-6 hover:bg-slate-800/50 hover:border-primary/30 transition-all duration-300 group">
+                        <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                            </svg>
+                        </div>
+                        <p className="text-slate-300 leading-relaxed group-hover:text-white transition-colors">
+                            {achievement}
+                        </p>
+                    </div>
+                ))}
             </div>
         </Section>
     );

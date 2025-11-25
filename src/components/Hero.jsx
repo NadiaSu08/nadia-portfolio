@@ -22,7 +22,7 @@ const Hero = () => {
                         </span>
                     </h1>
                     <h2 className="text-2xl md:text-3xl text-slate-400 font-light">
-                        {resumeData.title}
+                        {resumeData.title || "UX Engineer & Researcher"}
                     </h2>
                     <p className="text-lg text-slate-400 leading-relaxed max-w-lg border-l-2 border-primary pl-6">
                         {resumeData.summary}
@@ -42,85 +42,91 @@ const Hero = () => {
                             Contact Me
                         </a>
                     </div>
-
-                    <div className="flex gap-6 pt-8">
-                        {Object.entries(resumeData.socials).map(([key, value]) => (
-                            <a
-                                key={key}
-                                href={value}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-slate-500 hover:text-primary transition-colors"
-                                aria-label={key}
-                            >
-                                <span className="capitalize font-mono text-xs border-b border-transparent hover:border-primary">{key}</span>
-                            </a>
-                        ))}
-                    </div>
                 </div>
 
-                {/* Minimal Hero Visual - UX Wireframe & Medical AI */}
-                <div className="relative hidden md:block h-[500px] w-full">
+                {/* Creative Hero Visual - Terminal Booting Interface */}
+                <div className="relative hidden md:block h-[600px] w-full">
                     <div className="relative w-full h-full flex items-center justify-center">
 
-                        {/* 1. Medical AI: Clean Rotating DNA/Neural Helix */}
-                        <div className="absolute right-10 top-10 w-64 h-64 opacity-80 animate-[spin_40s_linear_infinite]">
-                            <svg viewBox="0 0 200 200" className="w-full h-full">
-                                <defs>
-                                    <linearGradient id="gradHelix" x1="0%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" stopColor="#ccff00" stopOpacity="0.1" />
-                                        <stop offset="50%" stopColor="#ccff00" stopOpacity="0.8" />
-                                        <stop offset="100%" stopColor="#ccff00" stopOpacity="0.1" />
-                                    </linearGradient>
-                                </defs>
-                                <path d="M60,20 Q140,60 60,100 T60,180" fill="none" stroke="url(#gradHelix)" strokeWidth="2" />
-                                <path d="M140,20 Q60,60 140,100 T140,180" fill="none" stroke="url(#gradHelix)" strokeWidth="2" />
+                        {/* Main Terminal Window */}
+                        <div className="relative z-20 w-full max-w-md bg-slate-900/95 backdrop-blur-xl border border-slate-700 rounded-lg shadow-2xl overflow-hidden font-mono text-sm">
+                            {/* Terminal Header */}
+                            <div className="bg-slate-800/50 px-4 py-2 border-b border-slate-700 flex items-center gap-2">
+                                <div className="flex gap-1.5">
+                                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                                    <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                    <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                                </div>
+                                <div className="ml-2 text-slate-400 text-xs">nadia@hci-lab</div>
+                            </div>
 
-                                {/* Nodes */}
-                                <circle cx="60" cy="20" r="2" fill="#ccff00" /> <circle cx="140" cy="20" r="2" fill="#ccff00" />
-                                <line x1="60" y1="20" x2="140" y2="20" stroke="#ccff00" strokeWidth="1" opacity="0.2" />
+                            {/* Terminal Content */}
+                            <div className="p-6 space-y-4 text-slate-300">
+                                <div className="flex items-center gap-2">
+                                    <span className="text-primary">➜</span>
+                                    <span className="text-white">booting interface...</span>
+                                </div>
 
-                                <circle cx="100" cy="60" r="2" fill="#ccff00" />
-                                <circle cx="60" cy="100" r="2" fill="#ccff00" /> <circle cx="140" cy="100" r="2" fill="#ccff00" />
-                                <line x1="60" y1="100" x2="140" y2="100" stroke="#ccff00" strokeWidth="1" opacity="0.2" />
+                                <div className="space-y-2 pl-4 border-l border-slate-700/50">
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-green-400">[ OK ]</span>
+                                        <span>Loaded: Human-Centered Design Systems</span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-green-400">[ OK ]</span>
+                                        <span>Activated: Neural Network Research</span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-green-400">[ OK ]</span>
+                                        <span>Running: UX Engineering Mode</span>
+                                    </div>
+                                </div>
 
-                                <circle cx="100" cy="140" r="2" fill="#ccff00" />
-                                <circle cx="60" cy="180" r="2" fill="#ccff00" /> <circle cx="140" cy="180" r="2" fill="#ccff00" />
-                                <line x1="60" y1="180" x2="140" y2="180" stroke="#ccff00" strokeWidth="1" opacity="0.2" />
-                            </svg>
+                                <div className="pt-4 space-y-2">
+                                    <div className="grid grid-cols-[80px_1fr] gap-2">
+                                        <span className="text-slate-500">User:</span>
+                                        <span className="text-white font-bold">Nadia Sultana</span>
+                                    </div>
+                                    <div className="grid grid-cols-[80px_1fr] gap-2">
+                                        <span className="text-slate-500">Role:</span>
+                                        <span className="text-primary">UX Engineer × AI/ML Researcher</span>
+                                    </div>
+                                    <div className="grid grid-cols-[80px_1fr] gap-2">
+                                        <span className="text-slate-500">Focus:</span>
+                                        <span>Designing experiences for intelligent systems</span>
+                                    </div>
+                                </div>
+
+                                <div className="pt-2 animate-pulse">
+                                    <span className="text-primary">{'>'}{'>'}</span> <span className="w-2 h-4 bg-primary inline-block align-middle"></span>
+                                </div>
+                            </div>
                         </div>
 
-                        {/* 2. UX Wireframe: Clean Floating Interface */}
-                        <div className="absolute left-0 bottom-20 w-64 bg-slate-900/50 backdrop-blur-sm border border-slate-700/50 rounded-xl p-4 shadow-xl animate-float" style={{ animationDelay: '1s' }}>
-                            <div className="flex justify-between items-center mb-4">
-                                <div className="w-16 h-2 bg-slate-700 rounded"></div>
-                                <div className="flex gap-1">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-slate-600"></div>
-                                    <div className="w-1.5 h-1.5 rounded-full bg-slate-600"></div>
-                                </div>
+                        {/* Floating Element 1: TensorFlow Code (Behind/Right) */}
+                        <div className="absolute -right-4 top-20 w-64 bg-slate-900/80 backdrop-blur border border-slate-700/50 rounded-lg p-4 shadow-xl transform rotate-6 opacity-60 hover:opacity-100 transition-opacity z-10">
+                            <div className="font-mono text-[10px] space-y-1 text-slate-400">
+                                <div className="text-purple-400">import <span className="text-white">tensorflow</span> as <span className="text-white">tf</span></div>
+                                <div className="text-blue-400">model <span className="text-white">=</span> tf.keras.Sequential([</div>
+                                <div className="pl-2 text-green-400">tf.keras.layers.Dense(128),</div>
+                                <div className="pl-2 text-green-400">tf.keras.layers.Dropout(0.2),</div>
+                                <div className="text-white">])</div>
                             </div>
-                            {/* Wireframe Elements */}
-                            <div className="grid grid-cols-2 gap-2 mb-3">
-                                <div className="h-16 border border-dashed border-slate-600 rounded bg-slate-800/50 flex items-center justify-center">
-                                    <div className="w-6 h-6 rounded-full border border-slate-600"></div>
-                                </div>
-                                <div className="h-16 border border-dashed border-slate-600 rounded bg-slate-800/50 flex items-center justify-center">
-                                    <div className="w-6 h-6 rounded-full border border-slate-600"></div>
-                                </div>
-                            </div>
-                            <div className="space-y-2">
-                                <div className="h-2 bg-slate-700 rounded w-3/4"></div>
-                                <div className="h-2 bg-slate-700 rounded w-1/2"></div>
-                            </div>
-                            {/* Active Element Highlight */}
-                            <div className="absolute -right-2 top-10 w-4 h-4 bg-primary rounded-full animate-ping opacity-75"></div>
-                            <div className="absolute -right-2 top-10 w-4 h-4 bg-primary rounded-full"></div>
                         </div>
 
-                        {/* Connecting Line */}
-                        <svg className="absolute inset-0 pointer-events-none w-full h-full">
-                            <path d="M100,350 Q200,250 350,100" fill="none" stroke="#ccff00" strokeWidth="1" strokeDasharray="4 4" className="opacity-10" />
-                        </svg>
+                        {/* Floating Element 2: Wireframe (Behind/Left) */}
+                        <div className="absolute -left-4 bottom-20 w-64 bg-slate-800/80 backdrop-blur border border-slate-600/50 rounded-lg p-3 shadow-xl transform -rotate-6 opacity-60 hover:opacity-100 transition-opacity z-10">
+                            <div className="flex gap-2 mb-2">
+                                <div className="w-1/4 h-16 bg-slate-700/50 rounded"></div>
+                                <div className="w-3/4 space-y-2">
+                                    <div className="h-4 bg-slate-700/50 rounded w-full"></div>
+                                    <div className="h-8 bg-slate-700/30 rounded w-full border border-dashed border-slate-600"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Background Glow */}
+                        <div className="absolute inset-0 bg-primary/5 blur-3xl -z-10 rounded-full"></div>
 
                     </div>
                 </div>

@@ -49,9 +49,9 @@ const Navbar = () => {
                         </a>
                     ))}
                     <a
-                        href="#"
+                        href="/resume.pdf"
+                        download
                         className="px-5 py-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-darker transition-all duration-300 font-medium text-sm flex items-center gap-2"
-                        onClick={(e) => { e.preventDefault(); alert("CV Download Placeholder"); }}
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -84,9 +84,10 @@ const Navbar = () => {
                     </a>
                 ))}
                 <a
-                    href="#"
+                    href="/resume.pdf"
+                    download
                     className="px-8 py-3 rounded-full bg-primary text-darker font-bold text-lg"
-                    onClick={(e) => { e.preventDefault(); alert("CV Download Placeholder"); setIsOpen(false); }}
+                    onClick={() => setIsOpen(false)}
                 >
                     Download CV
                 </a>

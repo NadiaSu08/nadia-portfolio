@@ -12,6 +12,7 @@ import Achievements from './components/Achievements';
 import Training from './components/Training';
 import Contact from './components/Contact';
 
+
 function App() {
     return (
         <div className="bg-darker min-h-screen text-slate-200 selection:bg-primary selection:text-darker font-sans">

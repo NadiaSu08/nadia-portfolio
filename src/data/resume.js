@@ -1,14 +1,13 @@
 export const resumeData = {
     // === 1. PERSONAL INFO & CONTACT ===
     name: "Nadia Sultana",
-    title: "IT Graduate | MSc. in ICT | UX Engineer",
+    //title: "IT Graduate | MSc. in ICT | UX Engineer",
     summary: "Creative UX Engineer and IT Graduate specializing in high-impact government projects and user-centered design. I integrate business needs into intuitive systems while driving research in human-centered AI and biomedical data analysis.",
 
     socials: {
         github: "https://github.com/NadiaSu08",
         linkedin: "https://linkedin.com/in/sultana-nadia/",
         email: "mailto:nadiasu.08@gmail.com",
-        phone: "+8801927085260",
         location: "Wari, Dhaka",
         portfolio: "nadiasu08.github.io"
     },
@@ -58,14 +57,14 @@ export const resumeData = {
             degree: "M. Sc. in Information & Communication Technology",
             institution: "Jahangirnagar University",
             period: "2024 - Present",
-            gpa: "3.71/4.00"
+            cgpa: "3.71/4.00"
         },
         {
             id: 2,
             degree: "B. Sc. in Information & Communication Technology",
             institution: "Jahangirnagar University",
             period: "2019 - 2024",
-            gpa: "3.69/4.00"
+            cgpa: "3.69/4.00"
         },
         {
             id: 3,
