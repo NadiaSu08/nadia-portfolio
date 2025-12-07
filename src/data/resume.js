@@ -9,7 +9,9 @@ export const resumeData = {
         linkedin: "https://linkedin.com/in/sultana-nadia/",
         email: "mailto:nadiasu.08@gmail.com",
         location: "Wari, Dhaka",
-        portfolio: "nadiasu08.github.io"
+        portfolio: "nadiasu08.github.io",
+        googleScholar: "https://scholar.google.com/citations?hl=en&user=T76v8o4AAAAJ",
+        researchGate: "https://www.researchgate.net/profile/Nadia-Sultana-14"
     },
 
     // === 2. SKILLS ===
@@ -94,6 +96,12 @@ export const resumeData = {
     // === 7. PUBLICATIONS ===
     publications: [
         {
+            title: "DREAM: A Novel Explainable Neural Network for Detecting Sleep Apnea Using Single-Lead ECG Signals",
+            authors: "Sanjida Akter, Md. Akmol Masud, Mst. Sanzida Islam Promi, Nadia Sultana, Maruf Ahmed, Md. Mahmudur Rahman, Mohammad Abu Yousuf, Saad Aloteibi, Mohammad Ali Moni",
+            journal: "Biomedical Signal Processing and Control",
+            details: "Volume 114, Article 109291, April 2026. https://doi.org/10.1016/j.bspc.2025.109291"
+        },
+        {
             title: "Multi-Layered Password-Based Steganography: A Novel Approach for Tiered Information Hiding",
             authors: "Md. Akmol Masud, Sanjida Akter, Nadia Sultana, Mohammad Abu Yousuf, and Md Zia Uddin.",
             journal: "2025 International Conference on Electrical, Computer and Communication Engineering (ECCE).",
@@ -104,12 +112,6 @@ export const resumeData = {
             authors: "Masud, Md. Akmol; Akter, Sanjida; Sultana, Nadia; et al.",
             journal: "Preprint.",
             details: "https://doi.org/10.6084/m9.figshare.27996986.v2."
-        },
-        {
-            title: "Dream: A Novel Explainable Neural Network for Detecting Sleep Apnea Using Single-Lead ECG Signals",
-            authors: "S. Akter, M. A. Masud, M. S. I. Promi, N. Sultana, M. Ahmed, et al.",
-            journal: "Preprint.",
-            details: "Feb 2025."
         }
     ],
 
@@ -169,15 +171,16 @@ export const resumeData = {
             details: "Oversaw IT operations, including the club's website & social media; planned and coordinated events, workshops with industry speakers."
         },
         {
-            role: "Co-Convenor, Pen Paper Perception",
-            organization: "E-Business & Entrepreneurship Club, Jahangirnagar University",
-            period: "Undated",
-            details: "Co-led the flagship inter-university competition, overseeing event design, logistics, promotions, and team coordination."
+            role: "Campus Ambassador",
+            organization: "Youth Opportunities",
+            period: "Batch 2021",
+            details: "Promoted youth opportunities on campus and social media, supported outreach, and represented the organization in various activities."
         }
     ],
 
     // === 11. TRAINING & CERTIFICATION ===
     training: [
+        "B-TopSE Program Architecture Course (September - October 2025), JICA Bangladesh, BCC, and BASIS",
         "Software Testing (2024), BCC, ICT Division",
         "Cyber Security & the IOT (2024), Coursera",
         "Certified Network Security Specialist (2020), ICSI",

@@ -20,15 +20,11 @@ const Navbar = () => {
         { id: 'skills', label: 'Skills' },
         { id: 'publications', label: 'Publications' },
         { id: 'research', label: 'Research' },
-        { id: 'achievements', label: 'Achievements' },
-        { id: 'projects', label: 'Projects' },
-        { id: 'volunteer', label: 'Volunteer' },
-        { id: 'training', label: 'Training' },
         { id: 'contact', label: 'Contact' },
     ];
 
     return (
-        <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-dark/80 backdrop-blur-md border-b border-white/10 py-4' : 'bg-transparent py-6'}`}>
+        <nav className={`fixed top-0 w-full z-[9999] transition-all duration-300 ${scrolled ? 'bg-dark/80 backdrop-blur-md border-b border-white/10 py-4' : 'bg-transparent py-6'}`}>
             <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
                 <a href="#" className="text-2xl font-bold text-white tracking-tighter group">
                     <span className="text-primary group-hover:text-white transition-colors">&lt;</span>
@@ -37,8 +33,8 @@ const Navbar = () => {
                 </a>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex items-center space-x-8">
-                    {navItems.slice(0, 6).map((item) => (
+                <div className="hidden md:flex items-center space-x-6">
+                    {navItems.slice(0, -1).map((item) => (
                         <a
                             key={item.id}
                             href={`#${item.id}`}
@@ -49,14 +45,10 @@ const Navbar = () => {
                         </a>
                     ))}
                     <a
-                        href="/resume.pdf"
-                        download
-                        className="px-5 py-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-darker transition-all duration-300 font-medium text-sm flex items-center gap-2"
+                        href="#contact"
+                        className="px-5 py-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-darker transition-all duration-300 font-medium text-sm"
                     >
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                        </svg>
-                        Download CV
+                        Contact
                     </a>
                 </div>
 
