@@ -64,7 +64,10 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu Overlay */}
-            <div className={`fixed inset-0 bg-dark/95 backdrop-blur-xl z-40 transform transition-transform duration-300 md:hidden flex flex-col items-center justify-center space-y-8 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+            <div
+                className={`fixed inset-0 backdrop-blur-xl z-40 transform transition-transform duration-300 md:hidden flex flex-col items-center justify-center space-y-8 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
+                style={{ backgroundColor: 'rgba(15, 23, 42, 0.98)' }}
+            >
                 {navItems.map((item) => (
                     <a
                         key={item.id}
