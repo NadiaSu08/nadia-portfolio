@@ -12,8 +12,8 @@ const Contact = () => {
                     feel free to reach out!
                 </p>
 
-                {/* All Contact Links - 5 Columns */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                {/* All Contact Links - 4 Columns Full Width */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                     {/* Email Card */}
                     <a
                         href={resumeData.socials.email}
