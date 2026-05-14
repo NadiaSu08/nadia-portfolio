@@ -1,0 +1,261 @@
+{
+  "personal": {
+    "name": "Nadia Sultana",
+    "title": "Human-Centered AI Researcher & UX Engineer",
+    "email": "nadiasu.08@gmail.com",
+    "linkedin": "https://linkedin.com/in/sultana-nadia",
+    "github": "https://github.com/NadiaSu08",
+    "about": "I am a UX Engineer and researcher passionate about Explainable AI, Human-Computer Interaction, and biomedical machine learning. My work focuses on bridging the gap between interpretable deep learning models and scalable, user-centered system design. I enjoy building human-centered technology that makes AI more understandable and accessible, and I am eager to advance this intersection of engineering and research through industry collaborations and a PhD.",
+    "mission": "Building scalable, human-centered technology driven by state-of-the-art explainable AI."
+  },
+  "researchInterests": [
+    "Explainable AI (XAI)",
+    "Human-Computer Interaction (HCI)",
+    "Human-AI Interaction",
+    "Interpretable Machine Learning",
+    "Biomedical Signal & Image Analysis",
+    "Accessibility-Aware Intelligent Systems"
+  ],
+  "education": [
+    {
+      "degree": "M.Sc. in ICT (Thesis Defended)",
+      "institution": "Institute of Information Technology, Jahangirnagar University",
+      "period": "Sep 2024 – Expected Jun 2026",
+      "gpa": "3.71/4.00"
+    },
+    {
+      "degree": "B.Sc. in ICT",
+      "institution": "Institute of Information Technology, Jahangirnagar University",
+      "period": "Feb 2019 – Sep 2024",
+      "gpa": "3.69/4.00",
+      "honors": "Merit-Based Scholarship"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "National Science & Technology (NST) Fellowship",
+      "category": "Fellowship",
+      "organization": "Ministry of Science & Technology, Bangladesh",
+      "period": "2025–26",
+      "description": "Awarded for M.Sc. research on explainable deep learning for Parkinson’s Disease diagnosis.",
+      "amount": "54,000 BDT"
+    },
+    {
+      "title": "Merit-Based Scholarship",
+      "category": "Scholarship",
+      "organization": "Jahangirnagar University",
+      "period": "2019 - 2022",
+      "description": "Awarded for outstanding academic excellence across the Admission Test, 1st Year, and 3rd Year BSc academic results."
+    },
+    {
+      "title": "Residential Bootcamp — BYLC Ventures Cohort-6",
+      "category": "Competition / Incubation",
+      "organization": "BYLC Ventures (Venture: GameSeeder)",
+      "period": "2022",
+      "description": "Selected for an intensive residential entrepreneurship bootcamp, designing digital product prototypes."
+    },
+    {
+      "title": "2nd Runner Up — Entrepret Season 2",
+      "category": "Competition",
+      "organization": "Evaly & NSU-YES! (Team GameSeeder)",
+      "period": "2022",
+      "description": "Secured 3rd place nationally by pitching an innovative business and technical framework."
+    },
+    {
+      "title": "Semi Finalist — Idea Innovation Contest 3.0",
+      "category": "Competition",
+      "organization": "Interactive Cares (Team GameSeeder)",
+      "period": "2022",
+      "description": "Shortlisted as a semi-finalist for proposing an advanced digital innovation solution."
+    },
+    {
+      "title": "Bootcamp Round — Battle of Minds",
+      "category": "Competition",
+      "organization": "BAT Bangladesh (Team GameSeeder)",
+      "period": "2022",
+      "description": "Selected among top talent for the prestigious BAT Bangladesh residential strategy bootcamp."
+    }
+  ],
+  "publications": {
+    "journals": [
+      {
+        "title": "Explainable CNN-GRU Model with Self-Attention for Human Activity Recognition Using Wearable Sensors through Data Augmentation",
+        "authors": "Nadia Sultana, Sidratul Afrida, Bushra Akter, Tasnia Jahan, Afrin Ahmed, Mohammad Abu Yousuf, and Md Zia Uddin",
+        "venue": "IEEE Access",
+        "volume": "vol. 14, pp. 48448-48477",
+        "year": "2026",
+        "status": "Published",
+        "tags": ["Q1 Journal", "B.Sc. Thesis Work"],
+        "highlight": true
+      },
+      {
+        "title": "DREAM: A novel explainable neural network for detecting sleep apnea using single-lead ECG signals",
+        "authors": "Sanjida Akter, Md. Akmol Masud, Mst. Sanzida Islam Promi, Nadia Sultana, Maruf Ahmed, Md. Mahmudur Rahman, Mohammad Abu Yousuf, Saad Aloteibi, and Mohammad Ali Moni",
+        "venue": "Biomedical Signal Processing and Control (Elsevier)",
+        "volume": "vol. 114, 109291",
+        "year": "2026",
+        "status": "Published",
+        "tags": ["Q1 Journal"],
+        "highlight": true
+      },
+      {
+        "title": "MosQNet-SA: Explainable convolutional-attention network for mosquito classification with application as a RESTful API for dengue and malaria risk mapping",
+        "authors": "Md. Akmol Masud, Sanjida Akter, Nadia Sultana, Mohammad Shahidul Islam, Mohammed Abu Yousuf, Farzan M. Noori, and Md Zia Uddin",
+        "venue": "PLoS ONE",
+        "volume": "vol. 21, pp. 1-30",
+        "year": "2026",
+        "status": "Published",
+        "tags": ["Q1 Journal"]
+      },
+      {
+        "title": "Pseudo-RGB data augmentation with deep-learning algorithms for improved Alzheimer’s disease and other disabilities detection",
+        "authors": "Md. Akmol Masud, Sanjida Akter, Nadia Sultana, Md. Biplob Hosen, Mehrin Anannya, Mohammad Abu Yousuf, AKM Azad, Salem Alyami, and Mohammad Ali Moni",
+        "venue": "PLoS ONE",
+        "year": "2026",
+        "status": "Under review",
+        "tags": ["Q1 Journal"]
+      }
+    ],
+    "conferences": [
+      {
+        "title": "Multi-layered password-based steganography: A novel approach for tiered information hiding",
+        "authors": "Md. Akmol Masud, Sanjida Akter, Nadia Sultana, Mohammad Abu Yousuf, and Md Zia Uddin",
+        "venue": "Proceedings of the 2025 International Conference on Electrical, Computer and Communication Engineering (ECCE)",
+        "pages": "pp. 1–6, IEEE",
+        "year": "Jan 2025",
+        "status": "Published",
+        "tags": []
+      },
+      {
+        "title": "Incep-BiLSTM-Attn: An Explainable Framework for Parkinson’s Diagnosis Using Voice Biomarkers",
+        "authors": "Nadia Sultana, Md. Tahmidur Rahman, and Fahima Tabassum",
+        "venue": "The 2nd International Conference on Federated Learning and Intelligent Computing Systems (FLICS2026)",
+        "year": "June 2026",
+        "status": "Accepted",
+        "tags": ["M.Sc. Thesis Work", "Presentation"],
+        "highlight": true
+      }
+    ]
+  },
+  "experience": [
+    {
+      "role": "Associate UX Engineer",
+      "company": "Synesis IT PLC.",
+      "location": "Dhaka, Bangladesh",
+      "period": "Aug 2024 – Present",
+      "responsibilities": [
+        "Contributed to 15+ digital platforms, driving UX for 10+ critical national e-government initiatives across finance, telecommunications, agriculture, and taxation.",
+        "Led accessible, user-centered requirement engineering and design processes, communicating complex system flows via stakeholder presentations to senior government officials.",
+        "Engineered scalable UI design systems with Figma, standardizing public platforms while ensuring WCAG compliant accessibility standards.",
+        "Implemented frontend interfaces bridging UX designs using multi-module architectures, WordPress, and ensuring responsive layouts."
+      ],
+      "keyProjects": "Bancassurance System (Jiban Bima Corporation), 333 Dashboard & Portal (a2i), NEIR Portal (BTRC), Land Contact Center (Ministry of Land), National Job Portal (BCC), E-Return System (NBR), and Plant Quarantine System(DAE)."
+    }
+  ],
+  "skills": {
+    "programming": ["C", "C++", "Python", "Java", "C#", "MATLAB", "SQL"],
+    "frameworks": ["TensorFlow", "Keras", "Scikit-learn", "Django", "Spring Boot", "React", "Unity"],
+    "web": ["HTML", "CSS", "JavaScript", "Frontend Development", "Backend Development", "Android Studio"],
+    "design": ["Figma", "Adobe Illustrator", "WordPress"]
+  },
+  "training": [
+    {
+      "title": "Agile Product Development ToT",
+      "organization": "JICA, BCC, BASIS TCP",
+      "period": "2026",
+      "description": "Intensive Agile product development, team facilitation, and lifecycle management.",
+      "tags": ["Agile", "Product Lifecycle"]
+    },
+    {
+      "title": "Software Engineering Architecture",
+      "organization": "JICA, BCC, BASIS TCP",
+      "period": "2025",
+      "description": "Modern software architecture methodologies, UML structural modeling, and system design.",
+      "tags": ["Architecture", "UML", "System Design"]
+    },
+    {
+      "title": "UX Writing, Microcopy, and More",
+      "organization": "Udemy",
+      "period": "2025",
+      "description": "Advanced techniques for creating human-centric UX copy and interface communication.",
+      "tags": ["UX Research", "Accessibility", "HCI"]
+    },
+    {
+      "title": "Software Testing",
+      "organization": "BCC, ICT Division",
+      "period": "2024",
+      "description": "Quality assurance protocols, automated testing frameworks, and systemic debugging methodologies.",
+      "tags": ["QA", "Testing"]
+    },
+    {
+      "title": "Cyber Security & the IoT",
+      "organization": "Coursera",
+      "period": "2024",
+      "description": "Security protocols and analytical structures protecting IoT and broad network architectures.",
+      "tags": ["Security", "IoT"]
+    },
+    {
+      "title": "Certified Network Security Specialist",
+      "organization": "ICSI",
+      "period": "2020",
+      "description": "Accredited specialization in network security, threat neutralization, and safe protocol engineering.",
+      "tags": ["Network Security", "ICSI"]
+    }
+  ],
+  "projects": {
+    "research": [
+      {
+        "title": "Human Activity Recognition Framework (UCI-HAR)",
+        "link": "https://github.com/NadiaSu08/Human-Activity-Recognition-using-4-ML-Models-UCI-HAR-Dataset-",
+        "description": "Engineered an interpretable machine learning system classifying human physical activities from dense sensor matrices utilizing SVM, Random Forest, and KNN architectures."
+      },
+      {
+        "title": "Coronary Disease Risk Prediction System",
+        "link": "https://github.com/NadiaSu08/Analysis-using-Logistic-Regression-to-predict-the-risk-of-coronary-disease-Framingham-dataset",
+        "description": "Implemented Logistic Regression paradigms atop the Framingham Dataset to quantitatively predict 10-year coronary disease risk, visualizing clinical trajectories natively."
+      },
+      {
+        "title": "Forecastly: Dynamic Weather Intelligence App",
+        "link": "https://github.com/NadiaSu08/Weather-App-Forecastly",
+        "description": "Designed a robust frontend interface integrating the OpenWeatherMap API, focusing on responsive data visualization and human-centered weather mapping."
+      }
+    ],
+    "engineering": [
+      {
+        "title": "National E-Governance Systems Design (Synesis IT)",
+        "link": "#",
+        "description": "Led UX research and accessible frontend architecture for mission-critical national platforms like the Bancassurance System and the 333 Central Dashboard."
+      },
+      {
+        "title": "Trendy Trade E-commerce Architecture",
+        "link": "https://github.com/NadiaSu08/Trendy-Trade-E-commerce-Website",
+        "description": "Developed dynamic responsive interfaces and transactional user journeys for a scalable online retail platform mapping user conversions reliably."
+      },
+      {
+        "title": "Java SpringBoot Scalable Bookstore System",
+        "link": "https://github.com/NadiaSu08/Simple-Book-store-system-using-Java-Spring-Boot",
+        "description": "Engineered a scalable, full-stack architectural MVC system utilizing Spring Boot and Thymeleaf templating for secure book tracking and e-commerce transactions."
+      }
+    ]
+  },
+  "leadership": [
+    {
+      "role": "Head of Department — Graphic Design",
+      "organization": "Youth School for Social Entrepreneurs (YSSE)",
+      "period": "2021 – 2022",
+      "description": "Led recruitment and creative operations for a team of 40+ members. Directed large-scale visual campaigns, securing the 'Best Department' recognition through significant organizational impact and mentoring."
+    },
+    {
+      "role": "Vice President (IT)",
+      "organization": "E-Business & Entrepreneurship Club, Jahangirnagar University",
+      "period": "Aug 2022 – Sep 2024",
+      "description": "Oversaw club-wide IT operations including the development and maintenance of the organizational website. Facilitated networking programs and executed large-scale campus events to promote digital entrepreneurship."
+    },
+    {
+      "role": "Campus Ambassador",
+      "organization": "Youth Opportunities",
+      "period": "2020 – 2021",
+      "description": "Acted as the primary liaison between students and the global platform, fostering professional communication, event coordination, and active community engagement across the university."
+    }
+  ]
+}
