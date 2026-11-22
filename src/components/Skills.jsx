@@ -20,15 +20,14 @@ export default function Skills({ data }) {
       >
         <h2 className="section-title">Technical Skills</h2>
         
-        <div className="grid grid-cols-3" style={{ gap: '1.75rem', marginTop: '3rem' }}>
+        <div className="grid grid-cols-3" style={{ gap: 'clamp(1rem, 3vw, 1.75rem)', marginTop: 'clamp(1.75rem, 4vw, 3rem)' }}>
           {categories.map((cat, idx) => (
             <div 
               key={idx} 
               className="card flex flex-col"
               style={{ 
                 height: '100%',
-                padding: '1.75rem',
-                /* Let the 4th and 5th items span gracefully on wider screens if desired, or keep uniform grid */
+                padding: 'clamp(1.25rem, 3.5vw, 1.75rem)',
                 ...(idx >= 3 ? { gridColumn: 'span 1' } : {})
               }}
             >

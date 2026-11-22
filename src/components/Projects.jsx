@@ -56,9 +56,9 @@ export default function Projects({ data }) {
       >
         <h2 className="section-title">Selected Projects</h2>
         
-        <div style={{ marginTop: '3rem' }}>
-          <h3 style={{ fontSize: '1.5rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <Lightbulb size={24} color="var(--accent-color)" /> Research-Driven Implementations
+        <div style={{ marginTop: 'clamp(1.75rem, 4vw, 3rem)' }}>
+          <h3 style={{ fontSize: 'clamp(1.2rem, 3vw, 1.4rem)', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+            <Lightbulb size={22} color="var(--accent-color)" /> Research-Driven Implementations
           </h3>
           <div className="grid grid-cols-3">
             {data.research.map((project, idx) => (
@@ -67,9 +67,9 @@ export default function Projects({ data }) {
           </div>
         </div>
 
-        <div style={{ marginTop: '5rem' }}>
-          <h3 style={{ fontSize: '1.5rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <CodeSquare size={24} color="var(--accent-color)" /> UX & Architecture Engineering
+        <div style={{ marginTop: 'clamp(2.5rem, 5vw, 4.5rem)' }}>
+          <h3 style={{ fontSize: 'clamp(1.2rem, 3vw, 1.4rem)', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+            <CodeSquare size={22} color="var(--accent-color)" /> UX & Architecture Engineering
           </h3>
           <div className="grid grid-cols-3">
             {data.engineering.map((project, idx) => (

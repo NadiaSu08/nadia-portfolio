@@ -21,12 +21,12 @@ export default function Contact({ personal }) {
         style={{ maxWidth: '700px', margin: '0 auto', textAlign: 'center' }}
       >
         <h2 className="section-title">Get In Touch</h2>
-        <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', marginTop: '1.5rem', marginBottom: '3rem', lineHeight: 1.6 }}>
+        <p style={{ fontSize: 'clamp(0.95rem, 2vw, 1.1rem)', color: 'var(--text-secondary)', marginTop: '1rem', marginBottom: 'clamp(2rem, 4vw, 3rem)', lineHeight: 1.65 }}>
           I am currently open to industry roles in UX Engineering and AI Research, as well as exploring PhD opportunities in Explainable AI and Human-Computer Interaction. 
           Please feel free to reach out for professional collaborations, research inquiries, or academic opportunities.
         </p>
 
-        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem' }}>
+        <div className="flex flex-wrap justify-center" style={{ gap: '0.75rem', width: '100%' }}>
           {links.map((link, idx) => (
             <a 
               key={idx} 
@@ -34,23 +34,9 @@ export default function Contact({ personal }) {
               target={link.label !== 'Email' ? '_blank' : undefined} 
               rel={link.label !== 'Email' ? 'noopener noreferrer' : undefined}
               className="contact-pill"
-              style={{ 
-                display: 'inline-flex', 
-                alignItems: 'center', 
-                gap: '0.6rem', 
-                padding: '0.6rem 1.25rem', 
-                backgroundColor: 'rgba(79, 111, 165, 0.05)', 
-                border: '1px solid rgba(79, 111, 165, 0.2)', 
-                borderRadius: '30px',
-                color: 'var(--text-primary)',
-                textDecoration: 'none',
-                fontSize: '0.95rem',
-                fontWeight: 500,
-                transition: 'all 0.2s ease'
-              }}
             >
               <span style={{ color: 'var(--accent-color)' }}>{link.icon}</span>
-              {link.label}
+              <span>{link.label}</span>
             </a>
           ))}
         </div>

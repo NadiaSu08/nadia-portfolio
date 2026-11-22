@@ -14,7 +14,7 @@ export default function Training({ data }) {
       >
         <h2 className="section-title">Training & Certifications</h2>
         
-        <div className="grid grid-cols-3" style={{ marginTop: '3rem' }}>
+        <div className="grid grid-cols-3" style={{ marginTop: 'clamp(1.75rem, 4vw, 3rem)' }}>
           {data.map((item, idx) => (
             <div key={idx} className="card flex flex-col" style={{ height: '100%' }}>
               <div className="flex items-start" style={{ gap: '1rem', marginBottom: '1.25rem' }}>

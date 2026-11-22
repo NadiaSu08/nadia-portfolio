@@ -22,7 +22,7 @@ export default function Hero({ data }) {
         gap: '0.85rem',
         boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.05)',
         zIndex: 5,
-        pointerEvents: 'none' /* ensure it doesn't block clicks */
+        pointerEvents: 'none'
       }}
       className="mobile-hidden"
     >
@@ -37,19 +37,19 @@ export default function Hero({ data }) {
   );
 
   return (
-    <section id="hero" className="section container" style={{ minHeight: '90vh', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+    <section id="hero" className="section container" style={{ minHeight: '85vh', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
       
       {/* Background Animated Gradient Blobs */}
       <motion.div 
-        animate={{ y: [0, -30, 0], x: [0, 20, 0] }}
+        animate={{ y: [0, -25, 0], x: [0, 15, 0] }}
         transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
-        style={{ position: 'absolute', top: '10%', left: '15%', width: '35vw', height: '35vw', maxWidth: '350px', maxHeight: '350px', background: 'radial-gradient(circle, rgba(79, 111, 165, 0.07) 0%, transparent 60%)', zIndex: -1, borderRadius: '50%' }} 
+        style={{ position: 'absolute', top: '10%', left: '10%', width: '35vw', height: '35vw', maxWidth: '350px', maxHeight: '350px', background: 'radial-gradient(circle, rgba(79, 111, 165, 0.07) 0%, transparent 60%)', zIndex: -1, borderRadius: '50%' }} 
         aria-hidden="true"
       />
       <motion.div 
-        animate={{ y: [0, 40, 0], x: [0, -15, 0] }}
+        animate={{ y: [0, 30, 0], x: [0, -15, 0] }}
         transition={{ duration: 15, repeat: Infinity, ease: 'easeInOut' }}
-        style={{ position: 'absolute', bottom: '10%', right: '15%', width: '40vw', height: '40vw', maxWidth: '400px', maxHeight: '400px', background: 'radial-gradient(circle, rgba(165, 161, 190, 0.08) 0%, transparent 65%)', zIndex: -1, borderRadius: '50%' }} 
+        style={{ position: 'absolute', bottom: '10%', right: '10%', width: '40vw', height: '40vw', maxWidth: '400px', maxHeight: '400px', background: 'radial-gradient(circle, rgba(165, 161, 190, 0.08) 0%, transparent 65%)', zIndex: -1, borderRadius: '50%' }} 
         aria-hidden="true"
       />
 
@@ -60,43 +60,43 @@ export default function Hero({ data }) {
 
       {/* Center Content */}
       <motion.div 
-        initial={{ opacity: 0, y: 30 }}
+        initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        style={{ textAlign: 'center', maxWidth: '850px', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+        transition={{ duration: 0.7 }}
+        style={{ textAlign: 'center', maxWidth: '850px', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}
       >
-        <div style={{ display: 'inline-block', padding: '0.4rem 1.25rem', background: 'rgba(79, 111, 165, 0.08)', color: 'var(--accent-color)', borderRadius: '20px', fontSize: '0.9rem', fontWeight: 600, marginBottom: '2.5rem', letterSpacing: '0.05em' }}>
+        <div style={{ display: 'inline-block', padding: '0.4rem 1.15rem', background: 'rgba(79, 111, 165, 0.08)', color: 'var(--accent-color)', borderRadius: '20px', fontSize: 'clamp(0.8rem, 2vw, 0.9rem)', fontWeight: 600, marginBottom: 'clamp(1.5rem, 3vw, 2.25rem)', letterSpacing: '0.04em' }}>
           RESEARCH-DRIVEN UX ENGINEER
         </div>
         
-        <h1 style={{ fontSize: 'clamp(3.5rem, 6vw, 4.5rem)', fontWeight: 700, marginBottom: '1.25rem', color: 'var(--text-primary)', lineHeight: 1.1, letterSpacing: '-0.02em' }}>
+        <h1 style={{ fontSize: 'clamp(2.3rem, 7vw, 4.25rem)', fontWeight: 700, marginBottom: '1rem', color: 'var(--text-primary)', lineHeight: 1.15, letterSpacing: '-0.025em', wordBreak: 'break-word' }}>
           {data.name}
         </h1>
         
-        <h2 style={{ fontSize: 'clamp(1.4rem, 3vw, 1.85rem)', fontWeight: 400, color: 'var(--text-secondary)', marginBottom: '2rem' }}>
+        <h2 style={{ fontSize: 'clamp(1.1rem, 3.2vw, 1.65rem)', fontWeight: 400, color: 'var(--text-secondary)', marginBottom: 'clamp(1.25rem, 2.5vw, 1.75rem)', lineHeight: 1.35 }}>
           {data.title}
         </h2>
         
-        <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-secondary)', maxWidth: '650px', marginBottom: '3.5rem', lineHeight: 1.6 }}>
+        <p style={{ fontSize: 'clamp(0.95rem, 2.2vw, 1.15rem)', color: 'var(--text-secondary)', maxWidth: '650px', marginBottom: 'clamp(2rem, 4vw, 3rem)', lineHeight: 1.65 }}>
           {data.mission} Bridging <strong style={{ color: 'var(--text-primary)', fontWeight: 600 }}>UX engineering excellence</strong> with <strong style={{ color: 'var(--text-primary)', fontWeight: 600 }}>academic depth.</strong>
         </p>
         
-        <div className="flex justify-center" style={{ gap: '1.25rem', flexWrap: 'wrap', marginBottom: '3.5rem' }}>
+        <div className="hero-buttons flex justify-center" style={{ gap: '1rem', flexWrap: 'wrap', marginBottom: 'clamp(2rem, 4vw, 3rem)' }}>
           <a href={`${import.meta.env.BASE_URL}assets/Nadia_Sultana_CV.pdf`} download="Nadia_Sultana_CV.pdf" className="btn btn-primary" aria-label="Download CV">
-            <Download size={20} /> Download CV
+            <Download size={18} /> Download CV
           </a>
           <a href="#publications" className="btn btn-outline" style={{ background: 'var(--bg-color)' }} aria-label="View Academic Publications">
-            <FileText size={20} /> Research Work
+            <FileText size={18} /> Research Work
           </a>
         </div>
         
-        <div className="flex justify-center" style={{ gap: '2rem', flexWrap: 'wrap', color: 'var(--text-secondary)' }}>
-          <a href={data.github} target="_blank" rel="noopener noreferrer" className="nav-link" aria-label="GitHub Profile" title="GitHub"><Github size={24} /></a>
-          <a href={data.linkedin} target="_blank" rel="noopener noreferrer" className="nav-link" aria-label="LinkedIn Profile" title="LinkedIn"><Linkedin size={24} /></a>
-          <a href={`mailto:${data.email}`} className="nav-link" aria-label="Email" title="Email"><Mail size={24} /></a>
-          <a href="https://scholar.google.com/citations?hl=en&user=T76v8o4AAAAJ" target="_blank" rel="noopener noreferrer" className="nav-link" aria-label="Google Scholar" title="Google Scholar"><GraduationCap size={24} /></a>
-          <a href="https://www.researchgate.net/profile/Nadia-Sultana-14?ev=hdr_xprf" target="_blank" rel="noopener noreferrer" className="nav-link" aria-label="ResearchGate" title="ResearchGate"><Library size={24} /></a>
-          <a href="https://orcid.org/0009-0003-3054-9432" target="_blank" rel="noopener noreferrer" className="nav-link" aria-label="ORCID" title="ORCID"><UserCircle size={24} /></a>
+        <div className="flex justify-center" style={{ gap: 'clamp(0.85rem, 3.5vw, 1.75rem)', flexWrap: 'wrap', color: 'var(--text-secondary)' }}>
+          <a href={data.github} target="_blank" rel="noopener noreferrer" className="nav-link" aria-label="GitHub Profile" title="GitHub" style={{ padding: '0.35rem' }}><Github size={22} /></a>
+          <a href={data.linkedin} target="_blank" rel="noopener noreferrer" className="nav-link" aria-label="LinkedIn Profile" title="LinkedIn" style={{ padding: '0.35rem' }}><Linkedin size={22} /></a>
+          <a href={`mailto:${data.email}`} className="nav-link" aria-label="Email" title="Email" style={{ padding: '0.35rem' }}><Mail size={22} /></a>
+          <a href="https://scholar.google.com/citations?hl=en&user=T76v8o4AAAAJ" target="_blank" rel="noopener noreferrer" className="nav-link" aria-label="Google Scholar" title="Google Scholar" style={{ padding: '0.35rem' }}><GraduationCap size={22} /></a>
+          <a href="https://www.researchgate.net/profile/Nadia-Sultana-14?ev=hdr_xprf" target="_blank" rel="noopener noreferrer" className="nav-link" aria-label="ResearchGate" title="ResearchGate" style={{ padding: '0.35rem' }}><Library size={22} /></a>
+          <a href="https://orcid.org/0009-0003-3054-9432" target="_blank" rel="noopener noreferrer" className="nav-link" aria-label="ORCID" title="ORCID" style={{ padding: '0.35rem' }}><UserCircle size={22} /></a>
         </div>
       </motion.div>
     </section>

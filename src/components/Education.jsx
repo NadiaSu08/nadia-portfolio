@@ -12,7 +12,7 @@ export default function Education({ data }) {
       >
         <h2 className="section-title">Education</h2>
         
-        <div className="grid grid-cols-2" style={{ gap: '2rem', marginTop: '3rem' }}>
+        <div className="grid grid-cols-2" style={{ gap: 'clamp(1.25rem, 3vw, 2rem)', marginTop: 'clamp(1.75rem, 4vw, 3rem)' }}>
           {data.map((edu, idx) => (
             <div key={idx} className="card flex flex-col" style={{ height: '100%' }}>
               <div className="flex items-start" style={{ gap: '1rem', marginBottom: '1.25rem' }}>

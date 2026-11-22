@@ -36,7 +36,7 @@ export default function Philosophy() {
           </p>
         </div>
 
-        <div style={{ gap: '2rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
+        <div style={{ gap: '1.5rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))' }}>
           {principles.map((p, idx) => (
              <motion.div 
                key={idx} 

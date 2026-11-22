@@ -9,40 +9,47 @@ export default function Publications({ data, interests }) {
       initial={{ opacity: 0, y: 15 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ delay: index * 0.1 }}
+      transition={{ delay: index * 0.08 }}
       className="card" 
-      style={{ marginBottom: '1.5rem', display: 'flex', gap: '1.5rem', position: 'relative', overflow: 'hidden', padding: '1.75rem 2rem' }}
+      style={{ 
+        marginBottom: '1.25rem', 
+        display: 'flex', 
+        gap: '1.25rem', 
+        position: 'relative', 
+        overflow: 'hidden', 
+        padding: 'clamp(1.25rem, 3.5vw, 2rem)' 
+      }}
     >
       {pub.highlight && (
         <div style={{ position: 'absolute', top: 0, left: 0, width: '4px', height: '100%', backgroundColor: 'var(--accent-color)' }} />
       )}
       
       <div style={{ width: '100%' }}>
-        <h3 style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.6rem', lineHeight: 1.4 }}>
+        <h3 style={{ fontSize: 'clamp(1.1rem, 2.5vw, 1.25rem)', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.5rem', lineHeight: 1.4 }}>
           {pub.title}
         </h3>
-        <p style={{ fontSize: '1.05rem', color: 'var(--text-secondary)', marginBottom: '0.85rem', lineHeight: 1.6 }}>
+        <p style={{ fontSize: 'clamp(0.92rem, 2vw, 1rem)', color: 'var(--text-secondary)', marginBottom: '0.75rem', lineHeight: 1.6 }}>
           {pub.authors}
         </p>
         
-        <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap', marginBottom: '1.25rem' }}>
-          <span style={{ fontSize: '0.95rem', color: 'var(--accent-color)', fontStyle: 'italic', fontWeight: 600 }}>
+        <div style={{ display: 'flex', gap: '0.6rem', alignItems: 'center', flexWrap: 'wrap', marginBottom: '1.15rem' }}>
+          <span style={{ fontSize: '0.9rem', color: 'var(--accent-color)', fontStyle: 'italic', fontWeight: 600 }}>
             {pub.venue}
           </span>
           {(pub.volume || pub.pages) && (
-             <span style={{ fontSize: '0.95rem', color: 'var(--text-secondary)' }}>
+             <span style={{ fontSize: '0.88rem', color: 'var(--text-secondary)' }}>
                 {pub.volume ? `${pub.volume}` : ''} {pub.pages ? `, ${pub.pages}` : ''}
              </span>
           )}
-          <span style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--text-primary)' }}>({pub.year})</span>
+          <span style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text-primary)' }}>({pub.year})</span>
         </div>
         
-        <div className="flex flex-wrap items-center" style={{ gap: '0.6rem' }}>
+        <div className="flex flex-wrap items-center" style={{ gap: '0.5rem' }}>
           <span className={`status-badge ${pub.status === 'Published' ? 'published' : 'review'}`}>
             {pub.status}
           </span>
           {pub.tags.map(tag => (
-             <span key={tag} className="tag-badge" style={{ backgroundColor: 'var(--section-bg)', color: 'var(--text-secondary)' }}>
+             <span key={tag} className="tag-badge" style={{ backgroundColor: 'var(--section-bg, rgba(79, 111, 165, 0.05))', color: 'var(--text-secondary)' }}>
                {tag}
              </span>
           ))}
@@ -66,13 +73,25 @@ export default function Publications({ data, interests }) {
         <h2 className="section-title">Research Publications</h2>
         
         {interests && interests.length > 0 && (
-          <div style={{ marginBottom: '4rem' }}>
-            <h3 style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <BrainCircuit size={22} color="var(--accent-color)" /> Research & Academic Focus
+          <div style={{ marginBottom: 'clamp(2.5rem, 5vw, 4rem)' }}>
+            <h3 style={{ fontSize: 'clamp(1.1rem, 2.5vw, 1.25rem)', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '1.25rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <BrainCircuit size={20} color="var(--accent-color)" /> Research & Academic Focus
             </h3>
-            <div className="flex gap-2" style={{ flexWrap: 'wrap' }}>
+            <div className="flex flex-wrap" style={{ gap: '0.5rem' }}>
               {interests.map((interest, idx) => (
-                <span key={idx} style={{ padding: '0.6rem 1.25rem', backgroundColor: 'var(--glass-bg)', border: '1px solid var(--border-color)', borderRadius: '30px', fontSize: '0.95rem', fontWeight: 500, color: 'var(--text-primary)', boxShadow: 'var(--shadow-sm)' }}>
+                <span 
+                  key={idx} 
+                  style={{ 
+                    padding: 'clamp(0.45rem, 1.5vw, 0.6rem) clamp(0.85rem, 2.5vw, 1.25rem)', 
+                    backgroundColor: 'var(--glass-bg)', 
+                    border: '1px solid var(--border-color)', 
+                    borderRadius: '30px', 
+                    fontSize: 'clamp(0.82rem, 1.8vw, 0.92rem)', 
+                    fontWeight: 500, 
+                    color: 'var(--text-primary)', 
+                    boxShadow: 'var(--shadow-sm)' 
+                  }}
+                >
                   {interest}
                 </span>
               ))}
@@ -81,17 +100,17 @@ export default function Publications({ data, interests }) {
         )}
 
         <div>
-          <h3 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: '2rem', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <BookOpen size={24} color="var(--accent-color)" /> Refereed Journal Articles
+          <h3 style={{ fontSize: 'clamp(1.2rem, 3vw, 1.35rem)', fontWeight: 600, marginBottom: '1.5rem', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+            <BookOpen size={22} color="var(--accent-color)" /> Refereed Journal Articles
           </h3>
           <div className="flex flex-col gap-2">
             {data.journals.map((pub, idx) => <PubCard key={idx} pub={pub} index={idx} />)}
           </div>
         </div>
         
-        <div style={{ marginTop: '4rem' }}>
-          <h3 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: '2rem', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <FileText size={24} color="var(--accent-color)" /> Conference Proceedings
+        <div style={{ marginTop: 'clamp(2.5rem, 5vw, 4rem)' }}>
+          <h3 style={{ fontSize: 'clamp(1.2rem, 3vw, 1.35rem)', fontWeight: 600, marginBottom: '1.5rem', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+            <FileText size={22} color="var(--accent-color)" /> Conference Proceedings
           </h3>
           <div className="flex flex-col gap-2">
             {data.conferences.map((pub, idx) => <PubCard key={idx} pub={pub} index={idx} />)}

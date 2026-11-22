@@ -22,13 +22,14 @@ function App() {
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
-  const NavLinks = ({ onClick }) => (
+  const NavLinks = ({ onClick, isMobile = false }) => (
     <>
-      <li><a href="#publications" onClick={onClick} className="nav-link">Research</a></li>
-      <li><a href="#experience" onClick={onClick} className="nav-link">Experience</a></li>
-      <li><a href="#projects" onClick={onClick} className="nav-link">Projects</a></li>
-      <li><a href="#achievements" onClick={onClick} className="nav-link">Awards</a></li>
-      <li><a href="#contact" onClick={onClick} className="nav-link">Contact</a></li>
+      <li><a href="#publications" onClick={onClick} className={isMobile ? "mobile-nav-link" : "nav-link"}>Research</a></li>
+      <li><a href="#experience" onClick={onClick} className={isMobile ? "mobile-nav-link" : "nav-link"}>Experience</a></li>
+      <li><a href="#projects" onClick={onClick} className={isMobile ? "mobile-nav-link" : "nav-link"}>Projects</a></li>
+      <li><a href="#achievements" onClick={onClick} className={isMobile ? "mobile-nav-link" : "nav-link"}>Awards</a></li>
+      <li><a href="#skills" onClick={onClick} className={isMobile ? "mobile-nav-link" : "nav-link"}>Skills</a></li>
+      <li><a href="#contact" onClick={onClick} className={isMobile ? "mobile-nav-link" : "nav-link"}>Contact</a></li>
     </>
   );
 
@@ -37,14 +38,14 @@ function App() {
       <a href="#main-content" className="skip-link">Skip to Navigation</a>
       
       <header style={{ position: 'sticky', top: 0, zIndex: 100 }}>
-        <nav aria-label="Main Navigation" style={{ padding: '1.25rem 0', background: 'rgba(250, 250, 248, 0.85)', backdropFilter: 'blur(12px)', borderBottom: '1px solid var(--border-color)' }}>
+        <nav aria-label="Main Navigation" style={{ padding: 'clamp(0.85rem, 2vw, 1.25rem) 0', background: 'rgba(250, 250, 248, 0.92)', backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)', borderBottom: '1px solid var(--border-color)' }}>
           <div className="container flex justify-between items-center" style={{ position: 'relative' }}>
-            <div style={{ fontWeight: 700, fontSize: '1.35rem', color: 'var(--accent-color)', letterSpacing: '0.02em' }}>
+            <a href="#hero" style={{ fontWeight: 700, fontSize: 'clamp(1.2rem, 3vw, 1.35rem)', color: 'var(--accent-color)', letterSpacing: '0.02em', textDecoration: 'none' }}>
               N. Sultana
-            </div>
+            </a>
             
             {/* Desktop Menu */}
-            <ul className="flex items-center mobile-hidden" style={{ gap: '3rem' }}>
+            <ul className="flex items-center mobile-hidden" style={{ gap: '2.5rem' }}>
               <NavLinks />
             </ul>
 
@@ -54,17 +55,40 @@ function App() {
               onClick={toggleMenu}
               aria-expanded={menuOpen}
               aria-label="Toggle Navigation Menu"
-              style={{ background: 'none', border: 'none', color: 'var(--text-primary)', cursor: 'pointer' }}
+              style={{ 
+                background: 'none', 
+                border: 'none', 
+                color: 'var(--text-primary)', 
+                cursor: 'pointer',
+                minWidth: '44px',
+                minHeight: '44px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '0.4rem',
+                borderRadius: '8px'
+              }}
             >
-              {menuOpen ? <X size={28} /> : <Menu size={28} />}
+              {menuOpen ? <X size={26} /> : <Menu size={26} />}
             </button>
             
             {/* Mobile Menu Dropdown */}
             {menuOpen && (
               <div className="mobile-menu desktop-hidden">
-                <ul className="flex flex-col items-center gap-5">
-                  <NavLinks onClick={() => setMenuOpen(false)} />
+                <ul className="flex flex-col items-center gap-2" style={{ width: '100%' }}>
+                  <NavLinks onClick={() => setMenuOpen(false)} isMobile={true} />
                 </ul>
+                <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1.25rem', width: '100%', textAlign: 'center' }}>
+                  <a 
+                    href={`${import.meta.env.BASE_URL}assets/Nadia_Sultana_CV.pdf`} 
+                    download="Nadia_Sultana_CV.pdf" 
+                    className="btn btn-primary"
+                    style={{ width: '100%', fontSize: '0.95rem' }}
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    Download CV
+                  </a>
+                </div>
               </div>
             )}
           </div>
