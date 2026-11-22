@@ -44,7 +44,7 @@ export default function Philosophy() {
                whileHover={{ y: -6 }}
                style={{ borderTop: '4px solid var(--accent-color)', height: '100%' }}
              >
-               <div style={{ backgroundColor: 'rgba(79, 111, 165, 0.1)', padding: '1.15rem', borderRadius: '50%', display: 'inline-flex', alignSelf: 'flex-start', marginBottom: '1.5rem', color: 'var(--accent-color)' }}>
+               <div className="icon-badge" style={{ width: '54px', height: '54px', minWidth: '54px', minHeight: '54px', marginBottom: '1.5rem' }}>
                  {p.icon}
                </div>
                <h3 style={{ fontSize: '1.3rem', fontWeight: 600, marginBottom: '1rem' }}>{p.title}</h3>

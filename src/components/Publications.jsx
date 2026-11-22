@@ -37,18 +37,18 @@ export default function Publications({ data, interests }) {
           <span style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--text-primary)' }}>({pub.year})</span>
         </div>
         
-        <div className="flex items-center" style={{ gap: '0.75rem', flexWrap: 'wrap' }}>
-          <span style={{ fontSize: '0.8rem', padding: '0.35rem 0.85rem', borderRadius: '4px', backgroundColor: pub.status === 'Published' ? 'rgba(19, 115, 51, 0.08)' : 'rgba(176, 96, 0, 0.08)', color: pub.status === 'Published' ? '#137333' : '#b06000', fontWeight: 600, border: `1px solid ${pub.status === 'Published' ? 'rgba(19, 115, 51, 0.2)' : 'rgba(176, 96, 0, 0.2)'}` }}>
+        <div className="flex flex-wrap items-center" style={{ gap: '0.6rem' }}>
+          <span className={`status-badge ${pub.status === 'Published' ? 'published' : 'review'}`}>
             {pub.status}
           </span>
           {pub.tags.map(tag => (
-             <span key={tag} style={{ fontSize: '0.8rem', padding: '0.35rem 0.85rem', borderRadius: '4px', backgroundColor: 'var(--bg-color)', color: 'var(--text-secondary)', border: '1px solid var(--border-color)', fontWeight: 500 }}>
+             <span key={tag} className="tag-badge" style={{ backgroundColor: 'var(--section-bg)', color: 'var(--text-secondary)' }}>
                {tag}
              </span>
           ))}
           {pub.highlight && (
-             <span style={{ fontSize: '0.8rem', padding: '0.35rem 0.85rem', borderRadius: '4px', backgroundColor: 'rgba(79, 111, 165, 0.08)', color: 'var(--accent-color)', display: 'flex', alignItems: 'center', gap: '0.35rem', fontWeight: 600, border: '1px solid rgba(79, 111, 165, 0.25)' }}>
-               <Bookmark size={14} /> Selected Work
+             <span className="tag-badge" style={{ fontWeight: 600, color: 'var(--accent-color)', borderColor: 'rgba(79, 111, 165, 0.3)' }}>
+               <Bookmark size={13} /> Selected Work
              </span>
           )}
         </div>

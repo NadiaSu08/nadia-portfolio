@@ -10,22 +10,29 @@ export default function Leadership({ data }) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
-        <h2 className="section-title">Leadership & Academic Service</h2>
+        <h2 className="section-title">Leadership & Community</h2>
         
         <div className="grid grid-cols-3" style={{ gap: '2rem', marginTop: '3rem' }}>
           {data.map((item, idx) => (
             <div key={idx} className="card flex flex-col" style={{ height: '100%' }}>
-              <Users size={28} color="var(--accent-color)" style={{ marginBottom: '1rem' }} />
-              <h3 style={{ fontSize: '1.15rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.5rem' }}>
-                {item.role}
-              </h3>
-              <p style={{ fontSize: '0.95rem', color: 'var(--accent-color)', marginBottom: '0.5rem', fontWeight: 500 }}>
-                {item.organization}
-              </p>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
-                {item.period}
-              </p>
-              <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', flex: 1 }}>
+              <div className="flex items-start" style={{ gap: '1rem', marginBottom: '1.25rem' }}>
+                <div className="icon-badge">
+                  <Users size={24} />
+                </div>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <h3 style={{ fontSize: '1.15rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.25rem', lineHeight: 1.35 }}>
+                    {item.role}
+                  </h3>
+                  <p style={{ fontSize: '0.92rem', color: 'var(--accent-color)', fontWeight: 500 }}>
+                    {item.organization}
+                  </p>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: '0.2rem' }}>
+                    {item.period}
+                  </p>
+                </div>
+              </div>
+              
+              <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', flex: 1, lineHeight: 1.6 }}>
                 {item.description}
               </p>
             </div>

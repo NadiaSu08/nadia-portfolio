@@ -7,10 +7,10 @@ export default function Achievements({ data }) {
 
   const getIcon = (category) => {
     switch(category) {
-      case 'Fellowship': return <Trophy size={28} />;
-      case 'Scholarship': return <GraduationCap size={28} />;
-      case 'Leadership': return <Users size={28} />;
-      default: return <Trophy size={28} />;
+      case 'Fellowship': return <Trophy size={24} />;
+      case 'Scholarship': return <GraduationCap size={24} />;
+      case 'Leadership': return <Users size={24} />;
+      default: return <Trophy size={24} />;
     }
   };
 
@@ -26,33 +26,33 @@ export default function Achievements({ data }) {
         <div className="grid grid-cols-3" style={{ marginTop: '3rem' }}>
           {data.map((item, idx) => (
             <div key={idx} className="card flex flex-col" style={{ height: '100%' }}>
-              <div className="flex justify-between items-start" style={{ marginBottom: '1.25rem' }}>
-                <div style={{ backgroundColor: 'rgba(79, 111, 165, 0.08)', padding: '1rem', borderRadius: '50%', color: 'var(--accent-color)' }}>
+              <div className="flex items-start" style={{ gap: '1rem', marginBottom: '1.25rem' }}>
+                <div className="icon-badge">
                   {getIcon(item.category)}
                 </div>
-                <div style={{ flex: 1, marginLeft: '1.25rem' }}>
-                  <h3 style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.25rem', lineHeight: 1.3 }}>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <h3 style={{ fontSize: '1.18rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.35rem', lineHeight: 1.35 }}>
                     {item.title}
                   </h3>
-                  <p style={{ fontSize: '1rem', color: 'var(--accent-color)', fontWeight: 500 }}>
+                  <p style={{ fontSize: '0.92rem', color: 'var(--accent-color)', fontWeight: 500 }}>
                     {item.organization}
                   </p>
                 </div>
               </div>
               
-              <p style={{ fontSize: '1rem', color: 'var(--text-secondary)', marginBottom: '1.5rem', flex: 1, lineHeight: 1.6 }}>
+              <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginBottom: '1.5rem', flex: 1, lineHeight: 1.6 }}>
                 {item.description}
               </p>
               
-              <div className="flex items-center justify-between" style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1.25rem', marginTop: 'auto' }}>
-                <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', fontWeight: 500 }}>{item.period}</span>
+              <div className="flex items-center justify-between" style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1rem', marginTop: 'auto' }}>
+                <span style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', fontWeight: 500 }}>{item.period}</span>
                 {item.amount && (
-                  <span style={{ fontSize: '0.9rem', padding: '0.3rem 0.8rem', borderRadius: '20px', backgroundColor: 'var(--bg-color)', color: 'var(--accent-color)', fontWeight: 600, border: '1px solid var(--border-color)' }}>
+                  <span className="tag-badge" style={{ fontWeight: 600, color: '#137333', backgroundColor: 'rgba(19, 115, 51, 0.08)', borderColor: 'rgba(19, 115, 51, 0.25)' }}>
                     Grant: {item.amount}
                   </span>
                 )}
-                {!item.amount && (
-                  <span style={{ fontSize: '0.85rem', padding: '0.3rem 0.8rem', borderRadius: '20px', backgroundColor: 'rgba(79, 111, 165, 0.05)', color: 'var(--text-secondary)', fontWeight: 500 }}>
+                {!item.amount && item.category && (
+                  <span className="tag-badge">
                     {item.category}
                   </span>
                 )}

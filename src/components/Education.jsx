@@ -14,25 +14,34 @@ export default function Education({ data }) {
         
         <div className="grid grid-cols-2" style={{ gap: '2rem', marginTop: '3rem' }}>
           {data.map((edu, idx) => (
-            <div key={idx} className="card">
-              <GraduationCap size={32} color="var(--accent-color)" style={{ marginBottom: '1rem' }} />
-              <h3 style={{ fontSize: '1.15rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.5rem' }}>
-                {edu.degree}
-              </h3>
-              <p style={{ fontSize: '1rem', color: 'var(--text-secondary)', marginBottom: '0.5rem', fontWeight: 500 }}>
-                {edu.institution}
-              </p>
-              <p style={{ fontSize: '0.9rem', color: 'var(--accent-color)', marginBottom: '0.5rem' }}>
-                {edu.period}
-              </p>
-              <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)' }}>
-                <strong>CGPA:</strong> {edu.gpa}
-              </p>
-              {edu.honors && (
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginTop: '0.5rem', fontStyle: 'italic' }}>
-                  Honors: {edu.honors}
-                </p>
-              )}
+            <div key={idx} className="card flex flex-col" style={{ height: '100%' }}>
+              <div className="flex items-start" style={{ gap: '1rem', marginBottom: '1.25rem' }}>
+                <div className="icon-badge">
+                  <GraduationCap size={24} />
+                </div>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <h3 style={{ fontSize: '1.2rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.25rem' }}>
+                    {edu.degree}
+                  </h3>
+                  <p style={{ fontSize: '0.98rem', color: 'var(--text-secondary)', fontWeight: 500 }}>
+                    {edu.institution}
+                  </p>
+                  <p style={{ fontSize: '0.88rem', color: 'var(--accent-color)', fontWeight: 500, marginTop: '0.2rem' }}>
+                    {edu.period}
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex flex-wrap items-center" style={{ gap: '0.6rem', marginTop: 'auto', paddingTop: '1.25rem', borderTop: '1px solid var(--border-color)' }}>
+                <span className="tag-badge" style={{ fontWeight: 600, color: 'var(--text-primary)', backgroundColor: 'var(--section-bg)' }}>
+                  CGPA: {edu.gpa}
+                </span>
+                {edu.honors && (
+                  <span className="tag-badge" style={{ fontWeight: 600, color: 'var(--accent-color)' }}>
+                    ★ {edu.honors}
+                  </span>
+                )}
+              </div>
             </div>
           ))}
         </div>

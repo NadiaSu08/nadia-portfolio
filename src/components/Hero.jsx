@@ -26,7 +26,7 @@ export default function Hero({ data }) {
       }}
       className="mobile-hidden"
     >
-      <div style={{ background: 'rgba(79, 111, 165, 0.1)', color: 'var(--accent-color)', padding: '0.65rem', borderRadius: '50%' }}>
+      <div className="icon-badge" style={{ width: '42px', height: '42px', minWidth: '42px', minHeight: '42px' }}>
         {icon}
       </div>
       <div>
