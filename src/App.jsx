@@ -10,6 +10,7 @@ import Training from './components/Training';
 import Skills from './components/Skills';
 import Achievements from './components/Achievements';
 import Leadership from './components/Leadership';
+import References from './components/References';
 import Contact from './components/Contact';
 
 // Using JSON directly
@@ -81,6 +82,7 @@ function App() {
         <Achievements data={data.achievements} />
         <Skills data={data.skills} />
         <Leadership data={data.leadership} />
+        <References data={data.references} />
         <Contact personal={data.personal} />
       </main>
       

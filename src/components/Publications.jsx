@@ -63,7 +63,7 @@ export default function Publications({ data, interests }) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
-        <h2 className="section-title">Journal Publications</h2>
+        <h2 className="section-title">Research Publications</h2>
         
         {interests && interests.length > 0 && (
           <div style={{ marginBottom: '4rem' }}>

@@ -5,8 +5,8 @@
     "email": "nadiasu.08@gmail.com",
     "linkedin": "https://linkedin.com/in/sultana-nadia",
     "github": "https://github.com/NadiaSu08",
-    "about": "I am a UX Engineer and researcher passionate about Explainable AI, Human-Computer Interaction, and biomedical machine learning. My work focuses on bridging the gap between interpretable deep learning models and scalable, user-centered system design. I enjoy building human-centered technology that makes AI more understandable and accessible, and I am eager to advance this intersection of engineering and research through industry collaborations and a PhD.",
-    "mission": "Building scalable, human-centered technology driven by state-of-the-art explainable AI."
+    "about": "Researcher working at the intersection of Explainable Artificial Intelligence, Human-Computer Interaction, and Biomedical Machine Learning. My work focuses on designing interpretable deep learning models and human-centered AI systems that improve transparency, trust, and accessibility in healthcare applications.",
+    "mission": "Designing interpretable deep learning models and human-centered AI systems that improve transparency, trust, and accessibility in healthcare applications."
   },
   "researchInterests": [
     "Explainable AI (XAI)",
@@ -14,21 +14,22 @@
     "Human-AI Interaction",
     "Interpretable Machine Learning",
     "Biomedical Signal & Image Analysis",
-    "Accessibility-Aware Intelligent Systems"
+    "Accessibility-Aware Intelligent Systems",
+    "Interactive Data Visualization"
   ],
   "education": [
     {
-      "degree": "M.Sc. in ICT (Thesis Defended)",
+      "degree": "M. Sc. in ICT",
       "institution": "Institute of Information Technology, Jahangirnagar University",
-      "period": "Sep 2024 – Expected Jun 2026",
-      "gpa": "3.71/4.00"
+      "period": "Sep 2024 – Sep 2026",
+      "gpa": "3.81/4.00"
     },
     {
-      "degree": "B.Sc. in ICT",
+      "degree": "B. Sc. in ICT",
       "institution": "Institute of Information Technology, Jahangirnagar University",
       "period": "Feb 2019 – Sep 2024",
       "gpa": "3.69/4.00",
-      "honors": "Merit-Based Scholarship"
+      "honors": "Merit-Based Academic Scholarship"
     }
   ],
   "achievements": [
@@ -41,11 +42,11 @@
       "amount": "54,000 BDT"
     },
     {
-      "title": "Merit-Based Scholarship",
+      "title": "Merit-Based Academic Scholarship",
       "category": "Scholarship",
-      "organization": "Jahangirnagar University",
-      "period": "2019 - 2022",
-      "description": "Awarded for outstanding academic excellence across the Admission Test, 1st Year, and 3rd Year BSc academic results."
+      "organization": "Jahangirnagar University, Bangladesh",
+      "period": "2019 – 2024",
+      "description": "Awarded four times for academic excellence in the undergraduate admission examination and first-, third-, and final-year examinations."
     },
     {
       "title": "Residential Bootcamp — BYLC Ventures Cohort-6",
@@ -85,7 +86,7 @@
         "volume": "vol. 14, pp. 48448-48477",
         "year": "2026",
         "status": "Published",
-        "tags": ["Q1 Journal", "B.Sc. Thesis Work"],
+        "tags": ["Q1 Journal", "Based on B.Sc. Thesis"],
         "highlight": true
       },
       {
@@ -113,10 +114,19 @@
         "venue": "PLoS ONE",
         "year": "2026",
         "status": "Under review",
-        "tags": ["Q1 Journal"]
+        "tags": ["PLoS ONE", "Under review"]
       }
     ],
     "conferences": [
+      {
+        "title": "Incep-BiLSTM-Attn: An Explainable Framework for Parkinson’s Diagnosis Using Voice Biomarkers",
+        "authors": "Nadia Sultana, Md. Tahmidur Rahman, and Fahima Tabassum",
+        "venue": "The 2nd International Conference on Federated Learning and Intelligent Computing Systems (FLICS2026)",
+        "year": "June 2026",
+        "status": "Published",
+        "tags": ["Based on M.Sc. Thesis"],
+        "highlight": true
+      },
       {
         "title": "Multi-layered password-based steganography: A novel approach for tiered information hiding",
         "authors": "Md. Akmol Masud, Sanjida Akter, Nadia Sultana, Mohammad Abu Yousuf, and Md Zia Uddin",
@@ -124,16 +134,7 @@
         "pages": "pp. 1–6, IEEE",
         "year": "Jan 2025",
         "status": "Published",
-        "tags": []
-      },
-      {
-        "title": "Incep-BiLSTM-Attn: An Explainable Framework for Parkinson’s Diagnosis Using Voice Biomarkers",
-        "authors": "Nadia Sultana, Md. Tahmidur Rahman, and Fahima Tabassum",
-        "venue": "The 2nd International Conference on Federated Learning and Intelligent Computing Systems (FLICS2026)",
-        "year": "June 2026",
-        "status": "Accepted",
-        "tags": ["M.Sc. Thesis Work", "Presentation"],
-        "highlight": true
+        "tags": ["IEEE ECCE 2025"]
       }
     ]
   },
@@ -144,34 +145,49 @@
       "location": "Dhaka, Bangladesh",
       "period": "Aug 2024 – Present",
       "responsibilities": [
-        "Contributed to 15+ digital platforms, driving UX for 10+ critical national e-government initiatives across finance, telecommunications, agriculture, and taxation.",
-        "Led accessible, user-centered requirement engineering and design processes, communicating complex system flows via stakeholder presentations to senior government officials.",
-        "Engineered scalable UI design systems with Figma, standardizing public platforms while ensuring WCAG compliant accessibility standards.",
-        "Implemented frontend interfaces bridging UX designs using multi-module architectures, WordPress, and ensuring responsive layouts."
+        "Contributed to 15+ digital platforms, including 10+ national e-government initiatives across telecommunications, finance, agriculture, taxation, and citizen services.",
+        "Led UX design, requirement analysis, wireframing, and frontend implementation for multi-module government systems serving large-scale public users.",
+        "Built reusable Figma component libraries and scalable design systems to maintain consistency across complex workflows.",
+        "Collaborated with cross-functional teams, senior government officials, and developers to align business requirements with accessible, user-centered digital experiences."
       ],
       "keyProjects": "Bancassurance System (Jiban Bima Corporation), 333 Dashboard & Portal (a2i), NEIR Portal (BTRC), Land Contact Center (Ministry of Land), National Job Portal (BCC), E-Return System (NBR), and Plant Quarantine System(DAE)."
     }
   ],
   "skills": {
-    "programming": ["C", "C++", "Python", "Java", "C#", "MATLAB", "SQL"],
-    "frameworks": ["TensorFlow", "Keras", "Scikit-learn", "Django", "Spring Boot", "React", "Unity"],
-    "web": ["HTML", "CSS", "JavaScript", "Frontend Development", "Backend Development", "Android Studio"],
-    "design": ["Figma", "Adobe Illustrator", "WordPress"]
+    "programming": ["Python", "C/C++", "Java", "SQL", "MATLAB"],
+    "machineLearning": ["TensorFlow", "Keras", "Scikit-learn", "NumPy", "Pandas", "OpenCV"],
+    "explainableAI": ["SHAP", "Attention Mechanisms", "Interpretable Machine Learning"],
+    "webHci": ["React", "Django", "HTML", "CSS", "JavaScript", "Figma", "Design Systems", "Accessibility (WCAG)"],
+    "researchTools": ["Linux (Ubuntu)", "Bash", "Git", "GitHub", "Jupyter Notebook", "Google Colab"]
   },
   "training": [
     {
-      "title": "Agile Product Development ToT",
-      "organization": "JICA, BCC, BASIS TCP",
-      "period": "2026",
-      "description": "Intensive Agile product development, team facilitation, and lifecycle management.",
-      "tags": ["Agile", "Product Lifecycle"]
+      "title": "Training of Trainers (ToT): B-TopSE Program Agile 2 (Agile Product Development)",
+      "organization": "JICA, BCC, BASIS",
+      "period": "Dec 2025 – Jan 2026",
+      "description": "Completed a Training of Trainers program on Agile product development, covering agile methodologies, team facilitation, and agile project management practices.",
+      "tags": ["Agile", "Product Development", "ToT"]
     },
     {
-      "title": "Software Engineering Architecture",
-      "organization": "JICA, BCC, BASIS TCP",
-      "period": "2025",
-      "description": "Modern software architecture methodologies, UML structural modeling, and system design.",
-      "tags": ["Architecture", "UML", "System Design"]
+      "title": "B-TopSE Program: Software Architecture Course",
+      "organization": "JICA, BCC, BASIS",
+      "period": "Sep 2025 – Oct 2025",
+      "description": "Completed intensive training on modern software architecture and system design methodologies, including UML structural modeling and the ICONIX process (Use Case → Domain → Robustness → Design), with a focus on scalable system architecture.",
+      "tags": ["Software Architecture", "UML", "ICONIX", "System Design"]
+    },
+    {
+      "title": "Training of Trainers (ToT): B-TopSE Program Software Architecture",
+      "organization": "JICA, BCC, BASIS",
+      "period": "Jun 2026",
+      "description": "Selected for and completed the Training of Trainers (ToT) program following successful completion of the B-TopSE Software Architecture course, with a focus on training delivery and knowledge transfer.",
+      "tags": ["Software Architecture", "ToT", "Knowledge Transfer"]
+    },
+    {
+      "title": "Software Testing Training",
+      "organization": "BCC, ICT Division",
+      "period": "Mar 2024 – May 2024",
+      "description": "Completed professional training on software testing methodologies, test design, execution, and quality assurance practices.",
+      "tags": ["Software Testing", "QA", "Test Design"]
     },
     {
       "title": "UX Writing, Microcopy, and More",
@@ -181,25 +197,11 @@
       "tags": ["UX Research", "Accessibility", "HCI"]
     },
     {
-      "title": "Software Testing",
-      "organization": "BCC, ICT Division",
-      "period": "2024",
-      "description": "Quality assurance protocols, automated testing frameworks, and systemic debugging methodologies.",
-      "tags": ["QA", "Testing"]
-    },
-    {
       "title": "Cyber Security & the IoT",
       "organization": "Coursera",
       "period": "2024",
       "description": "Security protocols and analytical structures protecting IoT and broad network architectures.",
       "tags": ["Security", "IoT"]
-    },
-    {
-      "title": "Certified Network Security Specialist",
-      "organization": "ICSI",
-      "period": "2020",
-      "description": "Accredited specialization in network security, threat neutralization, and safe protocol engineering.",
-      "tags": ["Network Security", "ICSI"]
     }
   ],
   "projects": {
@@ -240,22 +242,33 @@
   },
   "leadership": [
     {
-      "role": "Head of Department — Graphic Design",
+      "role": "Head of Department – Graphic Design",
       "organization": "Youth School for Social Entrepreneurs (YSSE)",
-      "period": "2021 – 2022",
-      "description": "Led recruitment and creative operations for a team of 40+ members. Directed large-scale visual campaigns, securing the 'Best Department' recognition through significant organizational impact and mentoring."
+      "period": "Oct 2021 – Jul 2022",
+      "description": "Led recruitment, supervised daily operations, and managed a team of 40+ members, contributing to the team’s recognition as the Best Department."
     },
     {
       "role": "Vice President (IT)",
       "organization": "E-Business & Entrepreneurship Club, Jahangirnagar University",
       "period": "Aug 2022 – Sep 2024",
-      "description": "Oversaw club-wide IT operations including the development and maintenance of the organizational website. Facilitated networking programs and executed large-scale campus events to promote digital entrepreneurship."
+      "description": "Oversaw IT operations, including the club’s website and social media, while facilitating networking and improving programs to promote the club’s mission."
     },
     {
       "role": "Campus Ambassador",
       "organization": "Youth Opportunities",
       "period": "2020 – 2021",
       "description": "Acted as the primary liaison between students and the global platform, fostering professional communication, event coordination, and active community engagement across the university."
+    }
+  ],
+  "references": [
+    {
+      "name": "Dr. Mohammad Abu Yousuf",
+      "title": "Professor",
+      "department": "Institute of Information Technology",
+      "institution": "Jahangirnagar University, Bangladesh",
+      "additional": "Former Vice-Chancellor, University of Frontier Technology, Bangladesh",
+      "email": "yousuf@juniv.edu",
+      "phone": "+880 1711-469636"
     }
   ]
 }
